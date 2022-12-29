@@ -6,11 +6,15 @@ const reset = document.querySelector("#reset");
 let my_number = 0;
 
 plus.addEventListener("click", function () {
+  let existing_number = numberBox.value;
+  my_number = existing_number;
   my_number++;
   numberBox.value = my_number;
 });
 
 my_minus.addEventListener("click", function () {
+  let existing_number = numberBox.value;
+  my_number = existing_number;
   my_number--;
   numberBox.value = my_number;
 });
